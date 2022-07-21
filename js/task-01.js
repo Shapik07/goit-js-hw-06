@@ -6,11 +6,9 @@ const countNumberCategories = function () {
 countNumberCategories();
 
 const showsCategoriesAndItems = function () {
-    const items = document.querySelectorAll('li.item')
-    console.log(items)
-    
+    const item = document.querySelector(".item");
+
 };
 
 showsCategoriesAndItems()
-
 
