@@ -3,16 +3,19 @@ const countNumberCategories = function () {
   console.log(`Number of categories: ${item.length}`);
 };
 
-countNumberCategories();
-
 const showsCategoriesAndItems = function () {
-  const headlines = document.querySelectorAll(".item > h2");
-  for (const header of headlines) {
-    console.log(`Category: ${header.textContent}`);
-    const item = document.querySelector(".item > ul");
-    console.log(`Elements: ${item.children.length}`);
-  }
+
+    const domEls = document.querySelector("#categories");
+    const items = domEls.querySelectorAll('.item')
+
+    for (const item of items) {
+        console.log(`Category: ${item.firstElementChild.textContent}`);
+        console.log(`Elements: ${item.lastElementChild.children.length}`)
+    }
 };
 
+
+countNumberCategories();
 showsCategoriesAndItems();
+
 
