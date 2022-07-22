@@ -12,3 +12,23 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+// 1. нужно получить доступ к '.gallery'
+const parentNode = document.querySelector(".gallery");
+console.log(parentNode);
+// 2. создать элементы <img> вложенных в <li>
+
+
+
+
+
+
+/**
+ * 1. нужно получить доступ к '.gallery'
+ * 
+ * 2. создать элементы <img> вложенных в <li>
+ * 
+ * 3. url и alt img должен браться из обьекта 
+ * 
+ * 4. добавить минимальное оформление гридами или CSS классами 
+ */
