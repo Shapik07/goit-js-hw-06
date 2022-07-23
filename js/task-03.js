@@ -14,13 +14,12 @@ const images = [
 ];
 
 const parentNode = document.querySelector(".gallery");
-const createElement = images.reduce(createElementsFn, "");
+const createElement = images.reduce(createImagesOnPage, "");
 
-function createElementsFn (acc, { url, alt }) {
+function createImagesOnPage(acc, { url, alt }) {
   acc += `<li class="gallery__item"><img class="gallery__item-img" src="${url}" alt="${alt}"></li>`;
+
   return acc;
-};
+}
 
-document.insertAdjacentHTML("afterbegin", acc);
-
-
+parentNode.insertAdjacentHTML("afterbegin", createElement);
