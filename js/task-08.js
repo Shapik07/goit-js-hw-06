@@ -11,6 +11,7 @@ function handleSubmit(event) {
       alert(message);
     }
     console.log(`Login: ${email.value}, Password: ${password.value}`)
+    event.currentTarget.reset();
     }
 
 formRef.addEventListener('submit', handleSubmit)
