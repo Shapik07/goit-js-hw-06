@@ -6,10 +6,11 @@ function handleSubmit(event) {
     elements: { email, password }
   } = event.currentTarget;
 
-    if (email.value === "" || password.value === "") {
-      const message = "Друг, все поля должны быть заполнены:)";
-      alert(message);
-    }
+  if (email.value === "" || password.value === "") {
+    const message = "Друг, все поля должны быть заполнены:)";
+    alert(message);
+    return;
+  }
     console.log(`Login: ${email.value}, Password: ${password.value}`)
     event.currentTarget.reset();
     }
